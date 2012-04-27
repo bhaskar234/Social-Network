@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     This is a blank Tiles definition file with a commented example.
+-->
+
+<tiles-definitions>
+
+<definition name="all.layout" path="/allLayout.jsp" >
+<put name="title" value="" />
+<put name="body" value="" />
+<put name="header" value="/header.jsp" />
+</definition> 
+<definition name="user.layout" path="/user/userlayout.jsp" >
+<put name="title" value="" />
+<put name="body" value="" />
+<put name="header" value="/user/header.jsp" />
+<put name="menu" value="/user/menu.jsp" />
+
+</definition>
+<definition name="registerpage" extends="all.layout" >
+<put name="title" value="Registration" />
+<put name="body" value="registerpage.jsp" />
+
+ </definition>
+ <definition name="registersuccesspage" extends="all.layout">
+ <put name="title" value="registration success" />
+ <put name="body" value="registersuccesspage.jsp" />
+ </definition>
+ <definition name="loginpage" extends="all.layout" >
+ <put name="title" value="Login" />
+ <put name="body" value="loginpage.jsp" />
+ </definition>
+ <definition name="homepage" extends="user.layout" >
+ <put name="title" value="homepage" />
+ <put name="body" value="/user/homepage.jsp" />
+ </definition>
+ <definition name="showuserspage" extends="user.layout" >
+     
+ <put name="title" value="List Of Registered Users" />
+ <put name="body" value="/user/showuserspage.jsp" />
+
+ </definition>
+ <definition name="profilepage" extends="user.layout" >
+ <put name="title" value="Profile" />
+ <put name="body" value="/user/profilepage.jsp" />
+ </definition>
+ <definition name="friendrequestspage" extends="user.layout" >
+ <put name="title" value="Friend Requests" />
+ <put name="body" value="/user/friendrequestspage.jsp" />
+ </definition>
+ <definition name="showfriendspage" extends="user.layout" >
+     <put name="title" value="Friends List" />
+     <put name="body" value="/user/showfriendspage.jsp" />
+     </definition>
+ <definition name="newmsgpage" extends="user.layout" >
+ <put name="title" value="Create New Message" />
+ <put name="body" value="/user/newmsgpage.jsp" />
+ </definition>
+ <definition name="inboxpage" extends="user.layout" >
+ <put name="title" value="Inbox" />
+ <put name="body" value="/user/inboxpage.jsp" />
+ </definition>
+ <definition name="newsfeedpage" extends="user.layout" >
+ <put name="title" value="News Feed" />
+ <put name="body" value="/user/newsfeedpage.jsp" />
+ </definition>
+ 
+ 
+    <!-- sample tiles definitions
+    <definition name=".mainLayout" path="/common/layouts/classicLayout.jsp">
+        <put name="title"  value="Sample Page Title" />
+        <put name="header" value="/common/header.jsp" />
+        <put name="menu"   value=".mainMenu" />
+        <put name="footer" value="/common/footer.jsp" />
+        <put name="body"   value=".portal.body" />
+    </definition>
+
+    <definition name=".mainMenu" path="/common/layouts/vboxLayout.jsp" >
+        <putList name="list" >
+            <add value=".menu.links" />
+            <add value=".menu.taglib.references" />
+            <add value=".menu.printer.friendly" />
+            <add value=".menu.old.documents" />
+      </putList>
+    </definition>
+
+    <definition name="aPage" extends=".mainLayout">
+        <put name="title"  value="Another Title" />
+        <put name="body"   value=".aPage.body" />
+    </definition>
+
+    end samples -->
+
+    <definition name="${YOUR_DEFINITION_HERE}">
+    </definition>
+
+</tiles-definitions>

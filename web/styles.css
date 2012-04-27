@@ -1,0 +1,44 @@
+
+body {
+    background-color: #3b5999;
+   font-family: Verdana;
+   font-size: 10pt;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 0px
+}
+
+h1
+{
+   background-color: red;
+   color: white;
+   font: 700 25pt arial;
+   letter-spacing: 15pt;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 0px;
+   text-align: center
+}
+h2
+{
+   color: navy;
+   font: 700 18pt arial;
+}
+a
+{
+  font:700 10pt verdana;
+}
+
+table
+{
+   margins:0px;
+   font:10pt verdana;
+}
+div.menu
+{
+    background-color:lightblue;
+    
+}
+
